@@ -14,6 +14,9 @@ def contactos(request):
         if request.POST.get('email') and '@' not in request.POST['email']:
             errors.append('Por favor introduce una direccion de e­mail valida.') 
         if not errors:
-            send_mail( request.POST['asunto'], request.POST['mensaje'], request.POST.get('email', 'noreply@example.com'), ['siteowner@example.com'], )
+            send_mail( request.POST['asunto'], request.POST['mensaje'], 
+                       request.POST.get('email', 'noreply@example.com'),['siteowner@example.com'], )
             return HttpResponseRedirect('/contactos/gracias/')
-    return render(request, 'formulario­_contactos.html', {'errors': errors})
+    return render(request, 'formulario_contactos.html', {'errors': errors,
+            'asunto': request.POST.get('asunto', ''), 'mensaje': request.POST.get('mensaje', ''), 
+            'email': request.POST.get('email', ''),})
