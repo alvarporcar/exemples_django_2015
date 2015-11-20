@@ -13,7 +13,7 @@ def contactos(request):
             send_mail(
                     cd['asunto'],
                     cd['mensaje'],
-                    cd.get('email', 'noreply@example.com'),['siteowner@example.com'], )
+                    cd.get('email', 'alvar.porcar@gmail.com'),['alvar.porcar@gmail.com'], )
             return HttpResponseRedirect('/contactos/gracias/') 
     else:
         form = FormularioContactos()
