@@ -107,10 +107,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_USE_TLS = True
+
+
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
 EMAIL_HOST_USER = 'alvar.porcar@gmail.com'
 EMAIL_HOST_PASSWORD = '@H19672000_'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+
 #DEFAULT_FROM_EMAIL = 'alvar.porcar@gmail.com'
 #DEFAULT_TO_EMAIL = 'alvar.porcar@gmail.com'
