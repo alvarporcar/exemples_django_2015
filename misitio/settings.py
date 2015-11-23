@@ -117,5 +117,5 @@ EMAIL_USE_TLS = True
 
 
 
-#DEFAULT_FROM_EMAIL = 'alvar.porcar@gmail.com'
-#DEFAULT_TO_EMAIL = 'alvar.porcar@gmail.com'
+DEFAULT_FROM_EMAIL = 'alvar.porcar@gmail.com'
+DEFAULT_TO_EMAIL = 'alvar.porcar@gmail.com'
