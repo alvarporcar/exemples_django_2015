@@ -11,10 +11,11 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 ---------------------------------------------------------------------
 Alvar Porcar
 Novembre 2015
-Castell√≥
+CastellÛ
 
-Exemples b√†sics de Django 1.8
+Exemples b‡sics de Django 1.8
 """
+# -*- coding: utf-8 -*-
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
