@@ -13,7 +13,7 @@ Alvar Porcar
 Novembre 2015
 Castello
 
-Exemples basics de Django 1.8
+Exemples basics de Django 1.8 (Django, la guia definitiva)
 """
 # -*- coding: utf-8 -*-
 
