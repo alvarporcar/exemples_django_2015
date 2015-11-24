@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 Alvar Porcar
 Novembre 2015
+Castelló
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
