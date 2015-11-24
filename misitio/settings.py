@@ -9,11 +9,11 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 ---------------------------------------------------------------------
-Alvar Porcar
+√Älvar Porcar
 Novembre 2015
-CastellÛ
+Castell√≥
 
-Exemples b‡sics de Django 1.8
+Exemples b√†sics de Django 1.8
 """
 # -*- coding: utf-8 -*-
 
