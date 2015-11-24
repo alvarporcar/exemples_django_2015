@@ -10,12 +10,7 @@ def contactos(request):
         form = FormularioContactos(request.POST) 
         if form.is_valid():
             cd = form.cleaned_data 
-            assumpte = cd['asunto']
-            missatge = cd['mensaje']
-            destinatari = cd['email']
-            print "send_mail("+assumpte+","+missatge+","+"alvar.porcar@gmail.com"+",["+destinatari+"],"+"fail_silently=False)"
-            send_mail(assumpte,missatge,'alvar.porcar@gmail.com',['destinatari'],fail_silently=False)
-            
+            send_mail(cd['asunto'],cd['mensaje'],'alvar.porcar@gmail.com',[cd['email']],fail_silently=False)
             return HttpResponseRedirect('/contactos/gracias/') 
     else:
         form = FormularioContactos()
