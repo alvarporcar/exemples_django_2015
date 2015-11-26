@@ -6,6 +6,7 @@ from contactos.views import contactos
 
  
 urlpatterns = [ 
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hola/$', hola), 
     url(r'^fecha/$', fecha_actual), 
