@@ -1,3 +1,11 @@
 eclipse.preferences.version=1
+encoding//biblioteca/forms.py=UTF-8
+encoding//biblioteca/models.py=UTF-8
+encoding//biblioteca/views.py=utf-8
 encoding//contactos/views.py=utf-8
+encoding//misitio/urls.py=utf-8
+encoding//templates/autor_form.html=UTF-8
+encoding//templates/bienvenidos.html=UTF-8
+encoding//templates/editor_detail.html=UTF-8
+encoding//templates/editor_list.html=UTF-8
 encoding//templates/formulario_contactos.html=UTF-8

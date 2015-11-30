@@ -1,5 +1,7 @@
 from django.http import HttpResponse, Http404
 from django.shortcuts import render 
+from suds.client import Client
+from django.views.generic import View
 
 import datetime
  
@@ -34,3 +36,20 @@ def atributos_meta(request):
     
 def atributos_meta_template(request):
     return render(request, 'atributos_meta.html', {'atributos': request.META.items()})
+
+ 
+def ws_temps(request):
+    url = 'http://www.webservicex.net/globalweather.asmx?WSDL'
+    client = Client(url)
+    weather =  client.service.GetWeather('Valencia', 'Spain')
+    return HttpResponse(weather)
+
+def ws_rss(request):
+    url = 'http://www.webservicex.net/RssToHTML.asmx?WSDL'
+    client = Client(url)
+    resposta =  client.service.GetHTML('http://cabanes.es/es/rss.xml')
+    return HttpResponse(resposta)
+
+class MiVista(View):
+    def get(self, request, *args, **kwargs): 
+        return HttpResponse('Hola Mundo')

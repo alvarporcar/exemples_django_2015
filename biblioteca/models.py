@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 
 # Create your models here.
  
@@ -30,12 +31,16 @@ class Autor(models.Model):
     def __unicode__(self):
         return '%s %s, %s' % (self.nombre, self.apellidos, self.email)
     
+    def get_absolute_url(self):
+        return reverse('detalles_autor', kwargs={'pk':self.pk})
+    
 class Libro(models.Model): 
     titulo = models.CharField(max_length=100) 
     autores = models.ManyToManyField(Autor) 
     editor = models.ForeignKey(Editor) 
     fecha_publicacion = models.DateField(blank=True, null=True) 
     portada = models.ImageField(upload_to='portadas') 
+    num_paginas = models.IntegerField(blank=True, null=True)
 
     class Meta():
         ordering = ["titulo"]
